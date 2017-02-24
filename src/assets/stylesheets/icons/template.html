@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Template icons</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no" >
+		
+<style>
+	@font-face {
+  font-family: "<%= fontName %>";
+  src: url('fonts/<%= fontName %>.eot');
+  src: url('fonts/<%= fontName %>.eot?#iefix') format('eot'),
+    url('fonts/<%= fontName %>.woff2') format('woff2'),
+    url('fonts/<%= fontName %>.woff') format('woff'),
+    url('fonts/<%= fontName %>.ttf') format('truetype'),
+    url('fonts/<%= fontName %>.svg#<%= fontName %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.<%= className %>:before {
+  display: inline-block;
+  font-family: "<%= fontName %>";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.<%= className %>-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.<%= className %>-2x { font-size: 2em; }
+.<%= className %>-3x { font-size: 3em; }
+.<%= className %>-4x { font-size: 4em; }
+.<%= className %>-5x { font-size: 5em; }
+.<%= className %>-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+<% _.each(glyphs, function(glyph) { %>
+	.<%= className %>-<%= glyph.name %>:before { content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>" }
+<% }); %>
+
+
+
+</style>
+	</head>
+	<body>
+		<% _.each(glyphs,function(glyph){ %>
+			<i class="<%= className %> <%= className %>-<%= glyph.name %>"></i>
+		<% }); %>
+		
+	</body>
+</html>
+
