@@ -1,0 +1,28 @@
+/* colors */
+$blue: blue;//#00f;#0000ff;
+$yellow: yellow;
+$red: red;
+
+/* fonts */
+$fontSerif: "Times New Roman", Times, serif;
+$fontSansSerif: "Comic Sans MS", cursive, sans-serif;
+
+/* Mediaqueries */
+$screenSm: 768px;
+$screenMd: 1024px;
+$screenLg: 1280px;
+
+$screenXs-max: ($screenSm - 1);
+
+@mixin tablet {
+	@media (min-width: #{$screenSm}) and (max-width: #{$screenMd}){
+		@content;
+	}
+}
+@mixin mobile {
+	@media (max-width: #{$screenXs-max}){
+		@content;
+	}	
+}
+
+

@@ -1,0 +1,17 @@
+.Header{
+	text-align:center;
+	font-family: $fontSerif;
+}
+	.Header-title{
+		font-size:40px;
+	}
+		.Header-iconsNext{
+			color:$red;
+			font-size:25px;
+		}
+	
+@include mobile {
+	.Header{
+		text-align: right;
+	}
+}

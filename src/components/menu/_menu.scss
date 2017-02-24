@@ -1,0 +1,9 @@
+.Menu{
+	
+}
+
+@include mobile {
+	.Menu{
+		font-size:50px;
+	}
+}

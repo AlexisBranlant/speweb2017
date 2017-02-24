@@ -1,0 +1,28 @@
+[
+	{
+		"name": "Pull",
+		"price": "36.99 €",
+		"color": "Rouge",
+		"visual": "pull-rouge.jpg",
+		"visualHover": "pull-rouge-hover.jpg"
+	},
+	{
+		"name": "Pull",
+		"price": "38.99 €",
+		"color": "Bleu",
+		"visual": "pull-bleu.jpg",
+		"visualHover": "pull-bleu-hover.jpg"
+	},
+	{
+		"name": "Pull",
+		"price": "41.90 €",
+		"color": "Vert",
+		"visual": "pull-vert.jpg"
+	},
+	{
+		"name": "Pull",
+		"price": "59.99 €",
+		"color": "Jaune",
+		"visual": "pull-jaune.jpg"
+	}
+]

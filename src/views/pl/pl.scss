@@ -1,0 +1,44 @@
+@import "../../assets/stylesheets/variables";
+
+.ProductList{
+	font-size: 0;
+	background:$blue;
+	font-family: $fontSansSerif;
+	
+	&-item{
+		display: inline-block;
+		width: 25%;
+		font-size: 16px;
+		text-align: center;
+	}
+	&:before{}
+	.ProductList-productName{text-align:center;}
+}
+		#ProductList-productName{}
+		.ProductList-productPrice{}
+		.ProductList-productColor{} 
+		.ProductList-productVisual{
+			display:inline-block;
+			width: 100%;
+			max-width: 100%;
+		}
+		
+/* tablette 600-1024 768-1024*/
+@include tablet{
+	.ProductList{
+		background:$red;
+	}
+}	
+/* mobile 0-599 0-767*/
+@include mobile{
+	.ProductList{
+		background:$yellow;
+	}
+}	
+		
+		
+		
+		
+		
+		
+		
